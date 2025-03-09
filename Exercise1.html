@@ -1,0 +1,90 @@
+<!-- tried Sigma webdevelopment simple exercise(by harry) -->
+ <!-- basically shows how to hangle with colors and layout  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            position: sticky;
+            top: 0;
+        }
+        nav{
+            background-color: peachpuff;
+            height:  80px;
+
+        }
+        .back{
+            background-color: green;
+            margin: 10px 10px;
+           text-align: center;
+        
+        }
+        .left{
+            background-color:pink ;
+            height: 60vh;
+            width: 40%;
+            display: inline-block;
+margin: 10px 20px;
+        }
+        .right{
+            background-color:rgb(57, 52, 227) ;
+            height: 60vh;
+            width: 40%;
+            display: inline-block;
+            margin: 10px 20px;
+        }
+        footer{
+            background-color: aquamarine;
+            height: 80px;
+            margin-bottom: 0;
+            margin-top: 20px;
+
+        }
+        .text{
+            border: 2px solid black;
+            padding: 34px;
+            text-align: center;
+            border-radius: 13px;
+            margin: 0px 30px;
+        }
+        .logo{
+            height: 60px;
+    width: 60px;
+    background-color: orange;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10px;
+    right: 23px;
+}
+        
+ 
+    </style>
+</head>
+<body>
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        <div class="back">
+
+           <div class="left"></div>
+           <div class="right"></div>
+
+        </div>
+        <div class="text">
+            WELCOME TO SIGMA WEB DEVELOPMENT
+        </div>
+        <div class="logo"></div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
