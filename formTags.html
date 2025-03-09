@@ -1,0 +1,369 @@
+<!-- table tages and form tags and its implementations -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table and form</title>
+</head>
+<body>
+    <!-- table tags -->
+    <table border="5">
+        <tr>
+            <th colspan="2">NAME</th>
+            <th>AGE</th>
+            <th colspan="5">MARKS</th>
+        </tr>
+        <tr>
+            <th>firstname</th>
+            <th>secondname</th>
+            <th></th>
+            <th>maths</th>
+            <th>dadc</th>
+            <th>java</th>
+            <th>dsa</th>
+            <th>comp</th>
+        </tr>
+        <tr>
+            <td>bhanu</td>
+            <td>rani</td>
+            <td>19</td>
+            <td>48</td>
+            <td>49</td>
+            <td>48</td>
+            <td>48</td>
+            <td>48</td>
+        </tr>
+        <tr>
+            <td>deepik</td>
+            <td>k</td>
+            <td>20</td>
+            <td>47</td>
+            <td>49</td>
+            <td>46</td>
+            <td>48</td>
+            <td>48</td>
+        </tr>
+        <tr>
+            <td>vanitha</td>
+            <td>cathrine</td>
+            <td>19</td>
+            <td>48</td>
+            <td>49</td>
+            <td>50</td>
+            <td>50</td>
+            <td>48</td>
+        </tr>
+        <tr>
+            <td>varshini</td>
+            <td>h</td>
+            <td>19</td>
+            <td>50</td>
+            <td>49</td>
+            <td>48</td>
+            <td>49</td>
+            <td>48</td>
+        </tr>
+        
+
+      </table><hr>
+      <table border="5">
+        <tr>
+            <th rowspan="2">NAME</th>
+            <th>firstname</th>
+            <td>bhanu</td>
+            <td>deepik</td>
+            <td>anitha</td>
+            <td>varshini</td>
+        </tr>
+        <tr>
+            <th>secondname</th>
+            <td>rani</td>
+            <td>k</td>
+            <td>cathrine</td>
+            <td>h</td>
+
+        </tr>
+        <tr><th>
+            AGE
+        </th>
+        <td></td>
+        <td>19</td>
+        <td>20</td>
+        <td>20</td>
+        <td>19</td>
+        
+    </tr>
+        <tr>
+            <th rowspan="5">MARKS
+            </th>
+            <th>maths</th>
+            <td>48</td>
+            <td>48</td>
+            <td>48</td>
+            <td>48</td>
+            
+            
+            
+        </tr>
+        <tr>
+            <th>dadc</th>
+            <td>49</td>
+            <td>49</td>
+            <td>49</td>
+            <td>49</td>
+        </tr>
+        <tr>
+            <th>java</th>
+            <td>49</td>
+            <td>49</td>
+            <td>49</td>
+            <td>49</td>
+        </tr>
+        <tr>
+            <th>dsa</th>
+            <td>49</td>
+            <td>49</td>
+            <td>49</td>
+            <td>49</td>
+        </tr>
+        <tr>
+            <th>comp</th>
+            <td>49</td>
+            <td>49</td>
+            <td>49</td>
+            <td>49</td>
+        </tr>
+
+      </table>
+      <br>
+      <hr>
+      <!--  -->
+    <h1 >TESTING FORM TYPE</h1>
+    <form>
+       <div><label for="information">firstname:</label>
+        <input type="text" id="firstname"></div><br> <div>
+        <label for="information">secondname:</label>
+        <input type="text" id="secondname"></div> <hr>
+        <label for="select">choose your favorite fruit</label><br>
+        <input type="radio" id="css" name="fruit">apple
+        <input type="radio" id="html" name="fruit">banana
+        <input type="radio" id="javascript" name="fruit">orange
+        <input type="radio" id="react" name="fruit">mango <br>
+<hr>
+        <label for="select">choose your favorite fruit</label><br>
+        <input type="checkbox" >apple
+        <input type="checkbox" >banana
+        <input type="checkbox" >orange
+        <input type="checkbox" >mango <br><hr>
+        <label for="select">choose your favorite fruit</label><br>
+        <input type="button" value="apple">
+        <input type="button" value="banana">
+        <input type="button" value="orange">
+        <input type="button" value="mango">
+       <br><hr>
+       <label for="more">choose your favorite fruit</select>
+        <select name="fruit">
+            <option value="apple">apple</option>
+            <option value="banana">banana</option>
+            <option value="orange">orange</option>
+            <option value="mango">mango</option>
+        </select>
+       </label><hr>
+       <label for="textarea">testarea:</label><br>
+       <textarea name="thoughts" rows="10" cols="20
+       ">tell your thoughts</textarea>
+       <hr>
+       <label for="fieldset">fieldSet</label>
+       <fieldset>
+        <legend>name info</legend>
+        <div><label for="information">firstname:</label>
+            <input type="text" id="firstname"></div><br> <div>
+            <label for="information">secondname:</label>
+            <input type="text" id="secondname"></div>
+       </fieldset>
+       <hr>
+       <label for="datalist">dataList</label>
+       <input type="lists" name="fruits" id="">
+       <datalist id="fruits">
+        <option value="apple">apple</option>
+        <option value="bananna">bananna</option>
+        <option value="mango">mango</option>
+        <option value="orange">orange</option>
+
+       </datalist>
+    </form><hr>
+    <label for="passWORD">PASSWORD</label>
+    <input type="password" name="fruits" ><hr>
+    <input type="image">
+    <label for="color">select your fav color</label>
+    <input type="color" name="color" id="color"><br>
+    <label for="dates">select your dob</label>
+    <input type="date" name="date" id="date">
+    <br>
+    <label for="dates">select your job date and time</label>
+    <input type="datetime-local" name="date" id="date"><br>
+    <label for="time">time</label>
+    <input type="time" name="time" id="time">
+    <label for="mail">mail</label>
+    <input type="email" name="mail" id="mail">
+
+    <label for="image">submit image</label>
+    <input type="image" src="icon.png" id="image"><br>
+    <label for="files">files select:</label>
+    <input type="file" name="files" id="files"><br>
+    <label for="number">number choose</label>
+    <input type="number" name="num" id="num">
+    <hr>
+    <input type="submit" name="" id="">
+
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!-- table -->
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabel</title>
+</head>
+<body>
+    <table border="5">
+        <tr>
+            <th colspan="2">NAME</th>
+            <th>AGE</th>
+            <th colspan="5">MARKS</th>
+        </tr>
+        <tr>
+            <th>firstname</th>
+            <th>secondname</th>
+            <th></th>
+            <th>maths</th>
+            <th>dadc</th>
+            <th>java</th>
+            <th>dsa</th>
+            <th>comp</th>
+        </tr>
+        <tr>
+            <td>bindu</td>
+            <td>shree</td>
+            <td>19</td>
+            <td>48</td>
+            <td>49</td>
+            <td>48</td>
+            <td>48</td>
+            <td>48</td>
+        </tr>
+        <tr>
+            <td>deepika</td>
+            <td>p</td>
+            <td>20</td>
+            <td>47</td>
+            <td>49</td>
+            <td>46</td>
+            <td>48</td>
+            <td>48</td>
+        </tr>
+        <tr>
+            <td>veenal</td>
+            <td>coutinh0</td>
+            <td>19</td>
+            <td>48</td>
+            <td>49</td>
+            <td>50</td>
+            <td>50</td>
+            <td>48</td>
+        </tr>
+        <tr>
+            <td>varshini</td>
+            <td>g</td>
+            <td>19</td>
+            <td>50</td>
+            <td>49</td>
+            <td>48</td>
+            <td>49</td>
+            <td>48</td>
+        </tr>
+        
+
+      </table><hr>
+      <table border="5">
+        <tr>
+            <th rowspan="2">NAME</th>
+            <th>firstname</th>
+            <td>bindu</td>
+            <td>deepika</td>
+            <td>veenal</td>
+            <td>varshini</td>
+        </tr>
+        <tr>
+            <th>secondname</th>
+            <td>shreee</td>
+            <td>p</td>
+            <td>coutinho</td>
+            <td>g</td>
+
+        </tr>
+        <tr><th>
+            AGE
+        </th>
+        <td></td>
+        <td>19</td>
+        <td>20</td>
+        <td>20</td>
+        <td>19</td>
+        
+    </tr>
+        <tr>
+            <th rowspan="5">MARKS
+            </th>
+            <th>maths</th>
+            <td>48</td>
+            <td>48</td>
+            <td>48</td>
+            <td>48</td>
+            
+            
+            
+        </tr>
+        <tr>
+            <th>dadc</th>
+            <td>49</td>
+            <td>49</td>
+            <td>49</td>
+            <td>49</td>
+        </tr>
+        <tr>
+            <th>java</th>
+            <td>49</td>
+            <td>49</td>
+            <td>49</td>
+            <td>49</td>
+        </tr>
+        <tr>
+            <th>dsa</th>
+            <td>49</td>
+            <td>49</td>
+            <td>49</td>
+            <td>49</td>
+        </tr>
+        <tr>
+            <th>comp</th>
+            <td>49</td>
+            <td>49</td>
+            <td>49</td>
+            <td>49</td>
+        </tr>
+
+      </table>
+</body>
+</html>  -->
