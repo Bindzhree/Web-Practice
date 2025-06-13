@@ -1,0 +1,71 @@
+<!-- different css styles learnt and applied for a bounce of a ball -->
+ <!-- helped me understand animations,transforms more clearer -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ball bounce</title>
+    <style>
+        .box{
+            background-color: blue;
+            height: 300px;
+            width: 400px;
+            display: flex;
+    align-items: self-end;
+}
+        .ball{
+            background-color: tomato;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            animation-name: bounce;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes bounce {
+           
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            10% {
+                transform: translateX(50px) translateY(-150px) rotate(180deg);
+        }
+    
+        20%{
+            transform:translateX(100px) translateY(-0px) rotate(360deg);
+        }
+        30%{
+        transform:translateX(150px) translateY(-150px) rotate(180deg);
+        }
+        40%{
+            transform:translateX(200px) translateY(-0px) rotate(360deg);
+        }
+            
+            50%{
+            transform:translateX(250px) translateY(-150px) rotate(180deg);
+        }
+        60%{
+            transform:translateX(300px) translateY(-0px) rotate(360deg);
+        }
+        70%{
+            transform:translateX(350px) translateY(-150px) rotate(180deg);
+        }
+         100%{
+            transform:translateX(370px) translateY(0px) rotate(0deg);
+        } 
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="ball"></div>
+    </div>
+    
+</body>
+</html>
