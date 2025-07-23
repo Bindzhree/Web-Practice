@@ -1,0 +1,100 @@
+     .container{
+            border: 2px solid black;
+            max-width: 600px;
+            max-height: 1000px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* justify-content: center;
+            align-items: center; */
+            /* overflow: hidden; */
+            place-items: center;
+            
+
+        }
+        
+        .box{
+            margin:30px;
+            background-color: hotpink;
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+
+        }
+
+        .transform1:hover{
+            /* transform property of rotation X-axis */
+            transform: rotateX(45deg);
+            background-color: blueviolet;
+            transition-property: all;
+            transition-duration: 3s;
+            
+            
+        }
+        .transform2:hover{
+            /* transform property of rotation Y-axis */
+            transform: rotateY(45deg);
+            background-color: blueviolet;
+            transition-property: all;
+            transition-duration:3s ;
+        }
+        .transform3:hover{
+            /* transform property of rotation Z-axis */
+            transform: rotateZ(45deg);
+            background-color: blueviolet;
+            transition-property: all;
+            transition-duration:3s ;
+           
+        }
+        .transform4:hover{
+            /* transform property of roatation in 3d plane with 130deg rotation angle */
+            transform: rotate3d(1, 1, 1, 135deg);
+            background-color: blueviolet;
+            transition-property: all;
+            transition-duration:3s;
+            
+        }
+        .transform5:hover{
+            /* enlarging / scaling into larger size */
+            transform: scale(1.5);
+            background-color: blueviolet;
+            transition-property: all;
+            transition-duration:3s;
+            
+        }
+        .transform6:hover{
+            /* shrinking */
+            transform: scale(0.5);
+            background-color: blueviolet;
+            transition-property: all;
+            transition-duration:3s;
+            
+        }
+        .transform7:hover{
+            /* doing 2 in 1 job shrinking and scaling at same time */
+            transform: scale(-1.5);
+            background-color: blueviolet;
+            transition-property: all;
+            transition-duration:5s;
+            
+        }
+        .transform8:hover{
+            /* translating / sliding in 2 directions x and y axis */
+            transform:translate3d(50px, -50px, 0px);
+            background-color: blueviolet;
+            transition-property: all;
+            transition-duration:3s;
+            
+            
+        }
+        .transform9:hover{
+            /* skew property in x axis direction */
+            transform: skewX(20deg);
+            background-color: blueviolet;
+            transition-property: all;
+            transition-duration:3s;
+            
+        }
