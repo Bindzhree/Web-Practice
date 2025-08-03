@@ -1,0 +1,114 @@
+ <!-- DOM selection and manupulation and EVENT listeners and more -->
+ <!-- applying inserting and removing elements using js -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contain{
+            background-color: antiquewhite;
+        width:px;
+            height:43px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+gap:10px;
+        }
+        .box{
+            background-color: rgb(76, 27, 224);
+            color: aliceblue;
+            width:34px;
+            height:34px;
+            border: 2px solid black;
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .green{
+            background-color: rgb(26, 207, 20);
+            color: aliceblue;
+            width:34px;
+            height:34px;
+            border: 2px solid black;
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2">
+            <div class="box3">
+                <div class="box4"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function loadscript(src,callback){
+            let script=document.createElement('script')
+            script.src=src
+            script.onload=()=>callback(script)
+            document.head.append(script)
+        }
+        loadscript('https://www.codewithharry.com/',(script)=>{
+            alert('script is loaded')
+            alert(script.src)
+        })
+
+    </script>
+</body>
+</html>
+
+
+
+<!-- // WHILE USING EVENT LISTENER
+ let elem=document.querySelector(".box");
+// elem.onclick=function (e){
+//     alert('yes');
+//     console.log(e);
+// } -->
+
+<!-- // RANDOM COLOR CHANGING CODE
+HTML INSIDE <body>:
+      <div class="container">
+          <div class="box">box</div>
+          <div class="box">box</div>
+          <div class="box">box</div>
+          <div class="box">box</div>
+      </div>
+
+  SCRIPT CODE:
+ let div=document.createElement("div");
+// div.setAttribute("class","created");
+// document.querySelector(".contain").append(div);
+// document.querySelector(".box").before("before");
+// div.innerHTML="ive been inserted";
+
+// let timeid=setInterval(()=>{
+//     let rand=Math.random();
+//     if(rand<0.33){
+//         document.querySelector(".box").style.backgroundColor = "lightblue";
+//     }
+//     else if(rand<0.44 && rand>0.33){
+//         document.querySelector(".box").style.backgroundColor = "purple";
+//     }
+//     else if(rand<0.11 && rand>0. ){
+//         document.querySelector(".box").style.backgroundColor = "yellow";
+//     }
+//     else if(rand<0.55 && rand>0.33){
+//         document.querySelector(".box").style.backgroundColor = "black";
+//     }
+//     else if(rand<0.99){
+//         document.querySelector(".box").style.backgroundColor = "grey";
+//     }
+//     else if(rand<0.94){
+//         document.querySelector(".box").style.backgroundColor = "orange";
+//     }
+//     console.log(rand);
+// },3000) -->
